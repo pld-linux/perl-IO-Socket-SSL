@@ -1,6 +1,6 @@
 #
 # Conditional build:
-# _with_tests - perform "make test" - needs network connection
+%bcond_with	tests	# perform "make test" - needs network connection
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	IO
@@ -46,7 +46,7 @@ certyfikatu, wybór wersji SSL. Ponadto wspaniale dzia³a z mod_perlem.
 	INSTALLDIRS=vendor
 %{__make}
 
-%{?_with_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
