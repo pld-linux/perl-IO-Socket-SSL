@@ -4,8 +4,8 @@
 Summary:	IO::Socket::SSL perl module
 Summary(pl):	Modu³ perla IO::Socket::SSL
 Name:		perl-IO-Socket-SSL
-Version:	0.80
-Release:	3
+Version:	0.81
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
