@@ -3,8 +3,8 @@
 %bcond_with	tests	# perform "make test" - needs network connection
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	IO
-%define	pnam	Socket-SSL
+%define		pdir	IO
+%define		pnam	Socket-SSL
 Summary:	IO::Socket::SSL - nearly transparent SSL encapsulation for IO::Socket::INET
 Summary(pl):	IO::Socket::SSL - prawie przezroczysta obudowa SSL dla IO::Socket::INET
 Name:		perl-IO-Socket-SSL
