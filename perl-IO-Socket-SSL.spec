@@ -11,7 +11,8 @@ Name:		perl-IO-Socket-SSL
 Version:	0.95
 Release:	1
 Epoch:		1
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	4eaf9bc8a44a3e98132f2c551b17f95d
