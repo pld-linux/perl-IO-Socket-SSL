@@ -8,15 +8,15 @@
 Summary:	IO::Socket::SSL -- Nearly transparent SSL encapsulation for IO::Socket::INET
 Summary(pl):	IO::Socket::SSL -- prawie przezroczysta obudowa SSL dla IO::Socket::INET
 Name:		perl-IO-Socket-SSL
-Version:	0.92
-Release:	2
+Version:	0.94
+Release:	1
 Epoch:		1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	c4757e406591dcfb1e068d0156a33601
-BuildRequires:	perl-devel >= 5.6
+# Source0-md5:	c5cb92b76553a85a538d4fe5502891e3
 BuildRequires:	perl-Net-SSLeay
+BuildRequires:	perl-devel >= 5.6
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -51,7 +51,8 @@ certyfikatu, wybór wersji SSL. Ponadto wspaniale dzia³a z mod_perlem.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 install example/* util/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
