@@ -7,7 +7,7 @@
 Summary:	IO::Socket::SSL -- Nearly transparent SSL encapsulation for IO::Socket::INET
 Summary(pl):	IO::Socket::SSL -- prawie przezroczysta obudowa SSL dla IO::Socket::INET
 Name:		perl-IO-Socket-SSL
-Version:	0.91
+Version:	0.92
 Release:	1
 Epoch:		1
 License:	GPL
