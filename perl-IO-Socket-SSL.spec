@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	IO
 %define	pnam	Socket-SSL
-%include	/usr/lib/rpm/macros.perl
 Summary:	IO-Socket-SSL perl module
 Summary(pl):	Modu³ perla IO-Socket-SSL
 Name:		perl-IO-Socket-SSL
 Version:	0.80
-Release:	2
-
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -23,7 +22,7 @@ IO-Socket-SSL perl module.
 Modu³ perla IO-Socket-SSL.
 
 %prep
-%setup -q -n IO-Socket-SSL-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
