@@ -26,7 +26,7 @@ Modu³ perla IO-Socket-SSL
 
 %build
 perl Makefile.PL
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
