@@ -7,8 +7,9 @@
 Summary:	IO::Socket::SSL -- Nearly transparent SSL encapsulation for IO::Socket::INET
 Summary(pl):	IO::Socket::SSL -- prawie przezroczysta obudowa SSL dla IO::Socket::INET
 Name:		perl-IO-Socket-SSL
-Version:	0.901
+Version:	0.91
 Release:	1
+Epoch:		1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -48,10 +49,10 @@ perl Makefile.PL
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
+install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 install example/* util/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
@@ -59,7 +60,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README docs/*
+%doc Change* README docs/*
 %{perl_sitelib}/IO/Socket/SSL.pm
 %{_mandir}/man3/*
 %{_examplesdir}/%{name}-%{version}
