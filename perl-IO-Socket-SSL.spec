@@ -43,7 +43,7 @@ certyfikatu, wybór wersji SSL. Ponadto wspaniale dzia³a z mod_perlem.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %{?_with_tests:%{__make} test}
