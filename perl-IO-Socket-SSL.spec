@@ -3,7 +3,7 @@ Summary:	IO-Socket-SSL perl module
 Summary(pl):	Modu³ perla IO-Socket-SSL
 Name:		perl-IO-Socket-SSL
 Version:	0.78
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -12,6 +12,7 @@ Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/IO/IO-Socket-SSL-%{versio
 BuildRequires:	rpm-perlprov >= 3.0.3-18
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-Net-SSLeay
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
