@@ -1,6 +1,7 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+# _with_tests - perform "make test" - needs network connection
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	IO
 %define	pnam	Socket-SSL
@@ -14,9 +15,7 @@ License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
-%if %{?_without_tests:0}%{!?_without_tests:1}
 BuildRequires:	perl-Net-SSLeay
-%endif
 BuildRequires:	rpm-perlprov >= 3.0.3-18
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -45,7 +44,7 @@ certyfikatu, wybór wersji SSL. Ponadto wspaniale dzia³a z mod_perlem.
 %{__perl} Makefile.PL
 %{__make}
 
-%{!?_without_tests:%{__make} test}
+%{?_with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
