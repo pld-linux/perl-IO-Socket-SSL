@@ -5,8 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	IO
 %define	pnam	Socket-SSL
-Summary:	IO::Socket::SSL -- Nearly transparent SSL encapsulation for IO::Socket::INET
-Summary(pl):	IO::Socket::SSL -- prawie przezroczysta obudowa SSL dla IO::Socket::INET
+Summary:	IO::Socket::SSL - nearly transparent SSL encapsulation for IO::Socket::INET
+Summary(pl):	IO::Socket::SSL - prawie przezroczysta obudowa SSL dla IO::Socket::INET
 Name:		perl-IO-Socket-SSL
 Version:	0.95
 Release:	1
