@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	IO
 %define	pnam	Socket-SSL
-Summary:	IO-Socket-SSL perl module
-Summary(pl):	Modu³ perla IO-Socket-SSL
+Summary:	IO::Socket::SSL perl module
+Summary(pl):	Modu³ perla IO::Socket::SSL
 Name:		perl-IO-Socket-SSL
 Version:	0.80
 Release:	3
@@ -16,10 +16,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-IO-Socket-SSL perl module.
+IO::Socket::SSL perl module.
 
 %description -l pl
-Modu³ perla IO-Socket-SSL.
+Modu³ perla IO::Socket::SSL.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
