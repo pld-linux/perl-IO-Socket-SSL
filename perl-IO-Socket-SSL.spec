@@ -6,7 +6,7 @@
 %define		pdir	IO
 %define		pnam	Socket-SSL
 Summary:	IO::Socket::SSL - nearly transparent SSL encapsulation for IO::Socket::INET
-Summary(pl):	IO::Socket::SSL - prawie przezroczysta obudowa SSL dla IO::Socket::INET
+Summary(pl.UTF-8):   IO::Socket::SSL - prawie przezroczysta obudowa SSL dla IO::Socket::INET
 Name:		perl-IO-Socket-SSL
 Version:	0.994
 Release:	1
@@ -31,13 +31,13 @@ multiple SSL contexts, cipher selection, certificate verification, and
 SSL version selection. As an extra bonus, it works perfectly with
 mod_perl.
 
-%description -l pl
-Ten modu≥ jest prawdziwym zamiennikiem dla IO::Socket::INET,
-uøywaj±cym SSL do kodowania danych przed przesy≥aniem do zdalnego
+%description -l pl.UTF-8
+Ten modu≈Ç jest prawdziwym zamiennikiem dla IO::Socket::INET,
+u≈ºywajƒÖcym SSL do kodowania danych przed przesy≈Çaniem do zdalnego
 serwera lub klienta. IO::Socket::SSL wspiera wszystkie dodatkowe
-rzeczy potrzebne do napisania w pe≥ni funkcjonalnego klienta lub
-serwera SSL: wiele kontekstÛw SSL, wybÛr szyfru, weryfikacja
-certyfikatu, wybÛr wersji SSL. Ponadto wspaniale dzia≥a z mod_perlem.
+rzeczy potrzebne do napisania w pe≈Çni funkcjonalnego klienta lub
+serwera SSL: wiele kontekst√≥w SSL, wyb√≥r szyfru, weryfikacja
+certyfikatu, wyb√≥r wersji SSL. Ponadto wspaniale dzia≈Ça z mod_perlem.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
