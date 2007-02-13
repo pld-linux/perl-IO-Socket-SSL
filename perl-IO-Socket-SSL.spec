@@ -6,7 +6,7 @@
 %define		pdir	IO
 %define		pnam	Socket-SSL
 Summary:	IO::Socket::SSL - nearly transparent SSL encapsulation for IO::Socket::INET
-Summary(pl.UTF-8):   IO::Socket::SSL - prawie przezroczysta obudowa SSL dla IO::Socket::INET
+Summary(pl.UTF-8):	IO::Socket::SSL - prawie przezroczysta obudowa SSL dla IO::Socket::INET
 Name:		perl-IO-Socket-SSL
 Version:	0.994
 Release:	1
