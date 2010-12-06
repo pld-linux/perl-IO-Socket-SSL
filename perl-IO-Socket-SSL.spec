@@ -22,6 +22,7 @@ BuildRequires:	perl-Net-SSLeay >= 1.21
 %endif
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+Suggests:	perl-Net-IDN-Encode
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
