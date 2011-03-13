@@ -18,7 +18,8 @@ Source0:	http://www.cpan.org/modules/by-module/IO/%{pdir}-%{pnam}-%{version}.tar
 # Source0-md5:	776f36451970287c9b3c77e1d39dd7ed
 URL:		http://search.cpan.org/dist/IO-Socket-SSL/
 %if %{with tests}
-BuildRequires:	perl-Net-SSLeay >= 1.21
+BuildRequires:	perl-Net-SSLeay >= 1.33
+BuildRequires:	perl-Scalar-List-Utils
 %endif
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
