@@ -61,6 +61,8 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+%{__rm} $RPM_BUILD_ROOT%{perl_vendorlib}/IO/Socket/SSL.pod
+
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 install example/* util/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
