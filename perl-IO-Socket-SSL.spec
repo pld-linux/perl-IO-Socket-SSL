@@ -22,6 +22,7 @@ BuildRequires:	perl-Scalar-List-Utils
 %endif
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.736
 # actually Net::SSLeay using openssl >= 0.9.8
 Requires:	openssl >= 0.9.8
 Suggests:	perl-Net-IDN-Encode
