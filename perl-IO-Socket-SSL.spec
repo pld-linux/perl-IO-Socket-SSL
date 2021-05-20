@@ -15,7 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/IO/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	3c8df96b5249c02025e2eb48596c213b
-URL:		http://search.cpan.org/dist/IO-Socket-SSL/
+URL:		https://metacpan.org/release/IO-Socket-SSL
 %if %{with tests}
 BuildRequires:	perl-Net-SSLeay >= 1.46
 BuildRequires:	perl-Scalar-List-Utils
@@ -66,7 +66,7 @@ rm -rf $RPM_BUILD_ROOT
 %{__rm} $RPM_BUILD_ROOT%{perl_vendorlib}/IO/Socket/SSL.pod
 
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
-install example/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+cp -pr example/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
