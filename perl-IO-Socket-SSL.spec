@@ -7,14 +7,14 @@
 Summary:	IO::Socket::SSL - nearly transparent SSL encapsulation for IO::Socket::INET
 Summary(pl.UTF-8):	IO::Socket::SSL - prawie przezroczysta obudowa SSL dla IO::Socket::INET
 Name:		perl-IO-Socket-SSL
-Version:	2.071
+Version:	2.072
 Release:	1
 Epoch:		1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/IO/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	3e33497ba43be5adce1f980437253172
+# Source0-md5:	4fb67fc8c4817dce8116f2eb7878fd9c
 URL:		https://metacpan.org/release/IO-Socket-SSL
 %if %{with tests}
 BuildRequires:	perl-Net-SSLeay >= 1.46
