@@ -25,6 +25,7 @@ BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	rpmbuild(macros) >= 1.745
 # actually Net::SSLeay using openssl >= 0.9.8
 Requires:	openssl >= 0.9.8
+Suggests:	perl-Mozilla-CA
 Suggests:	perl-Net-IDN-Encode
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
