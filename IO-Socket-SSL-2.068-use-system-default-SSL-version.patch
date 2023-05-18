@@ -1,15 +1,15 @@
---- lib/IO/Socket/SSL.pm
-+++ lib/IO/Socket/SSL.pm
-@@ -194,7 +194,7 @@ if ( defined &Net::SSLeay::CTX_set_min_p
- # global defaults
+--- lib/IO/Socket/SSL.pm.orig	2023-05-18 11:07:54.000000000 +0200
++++ lib/IO/Socket/SSL.pm	2023-05-18 23:14:00.449248530 +0200
+@@ -197,7 +197,7 @@
  my %DEFAULT_SSL_ARGS = (
      SSL_check_crl => 0,
--    SSL_version => 'SSLv23:!SSLv3:!SSLv2', # consider both SSL3.0 and SSL2.0 as broken
+     # TLS 1.1 and lower are deprecated with RFC 8996
+-    SSL_version => 'SSLv23:!TLSv1:!TLSv1_1:!SSLv3:!SSLv2',
 +    SSL_version => '',
      SSL_verify_callback => undef,
      SSL_verifycn_scheme => undef,  # fallback cn verification
      SSL_verifycn_publicsuffix => undef,  # fallback default list verification
-@@ -2383,7 +2383,7 @@ sub new {
+@@ -2436,7 +2436,7 @@
  
      my $ssl_op = $DEFAULT_SSL_OP;
  
