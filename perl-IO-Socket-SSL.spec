@@ -50,7 +50,7 @@ certyfikatu, wybór wersji SSL. Ponadto wspaniale działa z mod_perlem.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
-%patch0 -p0
+%patch -P0 -p0
 
 %build
 echo "n" | \
