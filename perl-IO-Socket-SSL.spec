@@ -13,10 +13,10 @@ Epoch:		1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/IO/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	https://www.cpan.org/modules/by-module/IO/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	0d78acc73c9e65a072a0c8fbb5ec7a47
 Patch0:		IO-Socket-SSL-2.068-use-system-default-SSL-version.patch
-URL:		https://metacpan.org/release/IO-Socket-SSL
+URL:		https://metacpan.org/dist/IO-Socket-SSL
 %if %{with tests}
 BuildRequires:	perl-Net-SSLeay >= 1.46
 BuildRequires:	perl-Scalar-List-Utils
