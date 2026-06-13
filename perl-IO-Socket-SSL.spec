@@ -13,7 +13,7 @@ Epoch:		1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	https://www.cpan.org/modules/by-module/IO/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	https://www.cpan.org/modules/by-module/IO/SULLR/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	d52c3d2dd85bfa22b722f7ae7ba90dc3
 Patch0:		IO-Socket-SSL-2.068-use-system-default-SSL-version.patch
 URL:		https://metacpan.org/dist/IO-Socket-SSL
@@ -58,6 +58,7 @@ certyfikatu, wybór wersji SSL. Ponadto wspaniale działa z mod_perlem.
 echo "n" | \
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
+
 %{__make}
 
 %{?with_tests:%{__make} test}
